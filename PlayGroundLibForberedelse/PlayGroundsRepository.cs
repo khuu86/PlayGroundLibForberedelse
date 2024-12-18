@@ -16,12 +16,11 @@ namespace PlayGroundLibForberedelse
         {
             _playGrounds = new List<PlayGround>
             {
-                new PlayGround { Id = 1, Name = "Millpark", MaxChildren = 10, MinAge = 5 },
-                new PlayGround { Id = 2, Name = "Secret Playground", MaxChildren = 12, MinAge = 4 },
-                new PlayGround { Id = 3, Name = "Library", MaxChildren = 8, MinAge = 3 },
-                new PlayGround { Id = 4, Name = "School", MaxChildren = 15, MinAge = 7 }
+                new PlayGround { Id = _nextId++, Name = "Millpark", MaxChildren = 10, MinAge = 5 },
+                new PlayGround { Id = _nextId++, Name = "Secret Playground", MaxChildren = 12, MinAge = 4 },
+                new PlayGround { Id = _nextId++, Name = "Library", MaxChildren = 8, MinAge = 3 },
+                new PlayGround { Id = _nextId++, Name = "School", MaxChildren = 15, MinAge = 7 }
             };
-            _nextId = 5; // Startværdi for næste ID
         }
 
         // Returnerer alle PlayGround objekter
