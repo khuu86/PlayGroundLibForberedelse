@@ -8,7 +8,7 @@ namespace PlayGroundLibForberedelse
 {
     public class PlayGroundsRepository
     {
-        private readonly List<PlayGround> _playGrounds; // Liste til PlayGround objekter
+        private List<PlayGround> _playGrounds; // Liste til PlayGround objekter
         private int _nextId = 1; // Variable til at tildele nye IDs
 
         // Constructor
